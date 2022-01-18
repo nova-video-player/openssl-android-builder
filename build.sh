@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     export CORES=$((`sysctl -n hw.logicalcpu`+1))
