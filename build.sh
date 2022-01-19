@@ -114,16 +114,21 @@ export STRIP=${CROSS_DIR}/bin/llvm-strip
 export NM=${CROSS_DIR}/bin/llvm-nm
 export AR=${CROSS_DIR}/bin/llvm-ar
 
+export CFLAGS="-Os"
+export LDFLAGS="-Wl,-Bsymbolic"
+
 mkdir -p "${OPENSSL_DIR}/dist-${ABI}"
 
 export PKG_CONFIG_LIBDIR=${LOCAL_PATH}
 
 ./Configure android-${ARCH} no-shared \
   -D__ANDROID_API__=${ANDROID_API} \
-  --prefix=${PWD}/build/${ABI}
+  --prefix=${LOCAL_PATH}/dist-${ABI}
 make -j${CORES}
 make install_sw
 make clean
+
+mkdir -p ${LOCAL_PATH}/dist-${ABI}
 
 popd
 

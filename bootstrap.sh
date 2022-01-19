@@ -10,8 +10,8 @@ do
     *)
       ABI=${ARCH} ;;
     esac
-  if [ ! -d dist-full-${ABI} ]
+  if [ ! -d dist-${ABI} ]
   then
-   ./build.sh -a ${ARCH} -c config_full.sh
+   ./build.sh -a ${ARCH}
   fi
 done
