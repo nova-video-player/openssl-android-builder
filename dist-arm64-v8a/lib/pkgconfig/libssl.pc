@@ -1,11 +1,11 @@
-prefix=/Users/marc/Documents/git/nova6/native/openssl-android-builder/dist-arm64-v8a
+prefix=/Users/marc/agraver/git/nova6/native/openssl-android-builder/dist-arm64-v8a
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 Name: OpenSSL-libssl
 Description: Secure Sockets Layer and cryptography libraries
-Version: 1.1.1q
+Version: 1.1.1r
 Requires.private: libcrypto
 Libs: -L${libdir} -lssl
 Cflags: -I${includedir}
