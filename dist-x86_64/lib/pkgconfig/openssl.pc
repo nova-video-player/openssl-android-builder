@@ -5,5 +5,5 @@ includedir=${prefix}/include
 
 Name: OpenSSL
 Description: Secure Sockets Layer and cryptography libraries and tools
-Version: 1.1.1v
+Version: 1.1.1w
 Requires: libssl libcrypto
