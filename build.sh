@@ -23,7 +23,7 @@ source ../../AVP/android-setup-light.sh
 LOCAL_PATH=$($READLINK -f .)
 
 if [ ! -d openssl.git ]; then
-  git clone https://github.com/openssl/openssl openssl.git --bare --depth=1 -b OpenSSL_1_1_1v
+  git clone https://github.com/openssl/openssl openssl.git --bare --depth=1 -b OpenSSL_1_1_1w
 #  git clone https://github.com/openssl/openssl openssl.git --depth=1 -b openssl-3.0.1
 fi
 
