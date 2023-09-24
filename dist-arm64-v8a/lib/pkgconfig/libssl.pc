@@ -1,4 +1,4 @@
-prefix=/Users/marc/Documents/git/nova-clean/native/openssl-android-builder/dist-arm64-v8a
+prefix=/home/marc/agraver/git/nova6/native/openssl-android-builder/dist-arm64-v8a
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
