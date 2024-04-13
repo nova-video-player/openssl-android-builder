@@ -1,12 +1,13 @@
-prefix=/home/marc/agraver/git/nova6/native/openssl-android-builder/dist-armeabi-v7a
+prefix=/Users/marc/Documents/git/nova-clean/native/openssl-android-builder/dist-armeabi-v7a
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-enginesdir=${libdir}/engines-1.1
+enginesdir=${libdir}/engines-3
+modulesdir=${libdir}/ossl-modules
 
 Name: OpenSSL-libcrypto
 Description: OpenSSL cryptography library
-Version: 1.1.1w
+Version: 3.2.1
 Libs: -L${libdir} -lcrypto
 Libs.private: -ldl -pthread 
 Cflags: -I${includedir}
