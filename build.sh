@@ -24,7 +24,7 @@ LOCAL_PATH=$($READLINK -f .)
 
 if [ ! -d openssl.git ]; then
 #  git clone https://github.com/openssl/openssl openssl.git --bare --depth=1 -b OpenSSL_1_1_1w
-  git clone https://github.com/openssl/openssl openssl.git --depth=1 -b openssl-3.2.1
+  git clone https://github.com/openssl/openssl openssl.git --depth=1 -b openssl-3.3.1
 fi
 
 OPENSSL_BARE_PATH=$($READLINK -f openssl.git)
@@ -55,8 +55,8 @@ case "${ARCH}" in
     exit 1 ;;
 esac
 
-OPENSSL_DIR="$(mktemp -d)"
-#OPENSSL_DIR="$PWD/openssl-$ABI"
+#OPENSSL_DIR="$(mktemp -d)"
+OPENSSL_DIR="$PWD/openssl-$ABI"
 mkdir -p ${OPENSSL_DIR}
 git clone "${OPENSSL_BARE_PATH}" "${OPENSSL_DIR}"
 
@@ -94,9 +94,9 @@ make -j${CORES}
 make install_sw
 make clean
 
-mkdir -p ${LOCAL_PATH}/dist-${ABI}
+#mkdir -p ${LOCAL_PATH}/dist-${ABI}
 
 popd
 
 cp -R "${OPENSSL_DIR}/build/${ABI}/"  "${LOCAL_PATH}/dist-${ABI}/"
-rm -Rf "${OPENSSL_DIR}"
+#rm -Rf "${OPENSSL_DIR}"
