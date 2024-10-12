@@ -13,7 +13,7 @@
 # and add symbolic links to their hash values.
 
 my $dir = "";
-my $prefix = "/Users/marc/Documents/git/nova-ffmpeg_7/native/openssl-android-builder/dist-armeabi-v7a";
+my $prefix = "/Users/marc/Documents/git/nova-next/native/openssl-android-builder/dist-armeabi-v7a";
 
 my $errorcount = 0;
 my $openssl = $ENV{OPENSSL} || "openssl";
