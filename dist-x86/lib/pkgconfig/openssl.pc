@@ -1,9 +1,9 @@
-prefix=/Users/marc/Documents/git/nova-64/native/openssl-android-builder/dist-x86
+prefix=/Users/marc/Documents/git/nova-native/native/openssl-android-builder/dist-x86
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include 
 
 Name: OpenSSL
 Description: Secure Sockets Layer and cryptography libraries and tools
-Version: 3.5.0
+Version: 3.5.2
 Requires: libssl libcrypto
