@@ -24,7 +24,7 @@ LOCAL_PATH=$($READLINK -f .)
 
 if [ ! -d openssl.git ]; then
 #  git clone https://github.com/openssl/openssl openssl.git --bare --depth=1 -b OpenSSL_1_1_1w
-  git clone https://github.com/openssl/openssl openssl.git --depth=1 -b openssl-3.5.2
+  git clone https://github.com/openssl/openssl openssl.git --depth=1 -b openssl-3.5.4
 fi
 
 OPENSSL_BARE_PATH=$($READLINK -f openssl.git)
