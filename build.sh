@@ -81,7 +81,7 @@ export NM=${CROSS_DIR}/bin/llvm-nm
 export AR=${CROSS_DIR}/bin/llvm-ar
 
 export CFLAGS="-Os"
-export LDFLAGS="-Wl,-Bsymbolic,--page-size=16384"
+export LDFLAGS="-Wl,-Bsymbolic,-z,max-page-size=16384"
 
 mkdir -p "${OPENSSL_DIR}/dist-${ABI}"
 
