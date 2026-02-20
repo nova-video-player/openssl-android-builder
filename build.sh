@@ -93,9 +93,6 @@ make -j${CORES}
 make install_sw
 make clean
 
-mkdir -p ${LOCAL_PATH}/dist-${ABI}
-
 popd
 
-cp -R "${OPENSSL_DIR}/build/${ABI}/"  "${LOCAL_PATH}/dist-${ABI}/"
 rm -Rf "${OPENSSL_DIR}"
