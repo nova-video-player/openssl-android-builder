@@ -87,7 +87,7 @@ mkdir -p "${OPENSSL_DIR}/dist-${ABI}"
 
 export PKG_CONFIG_LIBDIR=${LOCAL_PATH}
 
-./Configure android-${ARCH} no-shared \
+./Configure android-${ARCH} no-shared no-ui-console no-stdio \
   --prefix=${LOCAL_PATH}/dist-${ABI}
 make -j${CORES}
 make install_sw
